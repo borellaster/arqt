@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://borella.com/soap/expenses"
+           xmlns:tns="http://borella.com/soap/expenses"
+           elementFormDefault="qualified">
+
+    <!-- Request para buscar despesas por data -->
+    <xs:element name="getExpensesByDateRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="date" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Resposta com lista de despesas -->
+    <xs:element name="getExpensesByDateResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="expense" type="tns:expense" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Objeto Expense -->
+    <xs:complexType name="expense">
+        <xs:sequence>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="client" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="date" type="xs:string"/>
+            <xs:element name="amount" type="xs:decimal"/>
+            <xs:element name="status" type="tns:status"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Status da despesa -->
+    <xs:simpleType name="status">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PAID"/>
+            <xs:enumeration value="PENDING"/>
+            <xs:enumeration value="CANCELLED"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

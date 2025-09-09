@@ -1,0 +1,11 @@
+C:\tmp\cwi\acl\src\main\java\br\com\borella\acl\Application.java
+C:\tmp\cwi\acl\src\main\java\br\com\borella\acl\client\ExpenseClient.java
+C:\tmp\cwi\acl\src\main\java\br\com\borella\acl\config\SoapConfig.java
+C:\tmp\cwi\acl\src\main\java\br\com\borella\acl\config\SoapLoggingInterceptor.java
+C:\tmp\cwi\acl\src\main\java\br\com\borella\acl\controller\ExpenseController.java
+C:\tmp\cwi\acl\target\generated-sources\jaxb\br\com\borella\acl\wsdl\expenses\Expense.java
+C:\tmp\cwi\acl\target\generated-sources\jaxb\br\com\borella\acl\wsdl\expenses\GetExpensesByDateRequest.java
+C:\tmp\cwi\acl\target\generated-sources\jaxb\br\com\borella\acl\wsdl\expenses\GetExpensesByDateResponse.java
+C:\tmp\cwi\acl\target\generated-sources\jaxb\br\com\borella\acl\wsdl\expenses\ObjectFactory.java
+C:\tmp\cwi\acl\target\generated-sources\jaxb\br\com\borella\acl\wsdl\expenses\package-info.java
+C:\tmp\cwi\acl\target\generated-sources\jaxb\br\com\borella\acl\wsdl\expenses\Status.java

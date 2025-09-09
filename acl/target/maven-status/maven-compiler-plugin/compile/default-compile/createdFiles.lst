@@ -1,0 +1,11 @@
+br\com\borella\acl\wsdl\expenses\GetExpensesByDateResponse.class
+br\com\borella\acl\wsdl\expenses\GetExpensesByDateRequest.class
+br\com\borella\acl\wsdl\expenses\package-info.class
+br\com\borella\acl\client\ExpenseClient.class
+br\com\borella\acl\config\SoapConfig.class
+br\com\borella\acl\controller\ExpenseController.class
+br\com\borella\acl\wsdl\expenses\Expense.class
+br\com\borella\acl\wsdl\expenses\ObjectFactory.class
+br\com\borella\acl\Application.class
+br\com\borella\acl\config\SoapLoggingInterceptor.class
+br\com\borella\acl\wsdl\expenses\Status.class

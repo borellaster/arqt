@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este arquivo foi gerado pela Eclipse Implementation of JAXB, v3.0.0 
+Consulte https://eclipse-ee4j.github.io/jaxb-ri 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2025.09.09 às 02:13:47 PM BRT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://spring.io/guides/gs-producing-web-service">
+    <schemaBindings map="false">
+      <package name="io.spring.guides.gs_producing_web_service"/>
+    </schemaBindings>
+    <bindings scd="tns:getCountryRequest">
+      <class ref="io.spring.guides.gs_producing_web_service.GetCountryRequest"/>
+    </bindings>
+    <bindings scd="tns:getCountryResponse">
+      <class ref="io.spring.guides.gs_producing_web_service.GetCountryResponse"/>
+    </bindings>
+    <bindings scd="~tns:country">
+      <class ref="io.spring.guides.gs_producing_web_service.Country"/>
+    </bindings>
+    <bindings scd="~tns:currency">
+      <typesafeEnumClass ref="io.spring.guides.gs_producing_web_service.Currency"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://borella.com/soap/expenses">
+    <schemaBindings map="false">
+      <package name="com.borella.soap.expenses"/>
+    </schemaBindings>
+    <bindings scd="tns:getExpensesByDateRequest">
+      <class ref="com.borella.soap.expenses.GetExpensesByDateRequest"/>
+    </bindings>
+    <bindings scd="tns:getExpensesByDateResponse">
+      <class ref="com.borella.soap.expenses.GetExpensesByDateResponse"/>
+    </bindings>
+    <bindings scd="~tns:expense">
+      <class ref="com.borella.soap.expenses.Expense"/>
+    </bindings>
+    <bindings scd="~tns:status">
+      <typesafeEnumClass ref="com.borella.soap.expenses.Status"/>
+    </bindings>
+  </bindings>
+</bindings>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este arquivo foi gerado pela Eclipse Implementation of JAXB, v3.0.0 
+Consulte https://eclipse-ee4j.github.io/jaxb-ri 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2025.09.09 às 02:28:53 PM BRT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://borella.com/soap/expenses">
+    <schemaBindings map="false">
+      <package name="br.com.borella.acl.wsdl.expenses"/>
+    </schemaBindings>
+    <bindings scd="tns:getExpensesByDateRequest">
+      <class ref="br.com.borella.acl.wsdl.expenses.GetExpensesByDateRequest"/>
+    </bindings>
+    <bindings scd="tns:getExpensesByDateResponse">
+      <class ref="br.com.borella.acl.wsdl.expenses.GetExpensesByDateResponse"/>
+    </bindings>
+    <bindings scd="~tns:expense">
+      <class ref="br.com.borella.acl.wsdl.expenses.Expense"/>
+    </bindings>
+    <bindings scd="~tns:status">
+      <typesafeEnumClass ref="br.com.borella.acl.wsdl.expenses.Status"/>
+    </bindings>
+  </bindings>
+</bindings>
+
