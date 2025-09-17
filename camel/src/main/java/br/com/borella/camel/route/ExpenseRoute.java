@@ -9,11 +9,19 @@ public class ExpenseRoute extends RouteBuilder {
     @Override
     public void configure() {
 
-        from("timer://fetchExpenses?period=10000") // roda uma vez ao iniciar
+        from("timer://fetchExpenses?repeatCount=1")
                 .routeId("fetch-expenses-route")
                 .setHeader("CamelHttpMethod", constant("GET"))
-                .to("http://localhost:8081/expenses/2025-09-09") // data fixa, pode parametrizar
-                .log("Response from ACL: ${body}");
+                .to("http://localhost:8081/expenses/2025-09-16")
+                .log("Response from ACL: ${body}")
+                .to("rabbitmq:expenses-exchange"
+                        + "?hostname=127.0.0.1"
+                        + "&portNumber=5672"
+                        + "&username=guest"
+                        + "&password=guest"
+                        + "&queue=expenses-queue"
+                        + "&routingKey=expenses"
+                        + "&autoDelete=false")
+                .log("Mensagem publicada no RabbitMQ: ${body}");
     }
 }
-
