@@ -281,7 +281,6 @@ spring.jpa.show-sql=true
 
 ## 9. Observações
 
-* Todos os projetos usam **Java 17** e **Spring Boot 3.5.5**.
 * O `Atom` garante que IDs duplicados não causem erro, sempre insere novos registros.
 * O fluxo pode ser expandido para filtros, relatórios ou outras integrações.
 * Teste rápido do fluxo completo:
